@@ -1,0 +1,412 @@
+/* ----------------------------------------------------------------------------Encabezado y Footer------------------------------------------------------------------------------ */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+.encabezado{
+    background-image: url("../imagenes/Patrones.jpg");
+    border: 1px solid black;
+    max-width: 100%;
+    overflow: hidden;
+}
+.encabezado h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6vw;
+    -webkit-text-stroke: 3px #000000;
+    color: #ffffff;
+    padding: 4%;
+    align-items: center;
+}
+.encabezado img{
+    width: 13%;
+    margin: 12px 12px auto;
+    float: left;
+    display: block;
+}
+.encabezado nav{
+    max-width: 100%;
+    background-color: hwb(133 27% 35%);
+    overflow: hidden;   
+}
+.encabezado a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 2% 3%;
+    float: left;
+}
+.encabezado a:hover{
+    background-color: #fbff09;
+    color: #000000
+}
+.banner{
+    max-width: 100%;
+}
+.banner img{
+    width: 100%;
+    padding: 6% 20%;
+    float: inline-start;
+    margin: -25px auto;
+    display: block;
+}
+
+.fooder table{
+    width: 100%;
+    height: 160px;
+    background-color: hwb(133 27% 35%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+}
+
+/* ---------------------------------------------------------------------------Perfil del Profesor----------------------------------------------------------------------- */
+.encabezado h2{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6vw;
+    margin-bottom: 30px;
+    color: hsl(0, 0%, 100%);
+    text-align: center;
+    -webkit-text-stroke: 3px #000000;
+}
+.Datos {
+    display: flex;
+    margin: 60px 5%;
+    position: relative;
+}
+.Datos:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    bottom: -30px;
+    left: -30px;
+    background-color: hsl(189, 100%, 94%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: -1;
+    border-radius: 8px;
+}
+.Datos table{
+    width: 75%;
+    overflow: hidden;
+    margin-left: 50px;
+    border-collapse: collapse;
+}
+.Datos th{
+    font-size: 1.5vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Datos td{
+    font-size: 1.3vw;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.cedula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.Consultar {
+    margin-bottom: 10px;
+}
+.Consultar img {
+    width: 50px;
+}
+.cedula button {
+    background-color: hwb(133 27% 35%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cedula button:hover {
+    background-color:  #fbff09;
+}
+
+/* -------------------------------------------------------------Grupo del Profesor y Calificaciones------------------------------------------------------------- */
+.Grupo{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+.Grupo p{
+    font-size: 2vw;
+}
+h3 {
+    font-size: 20px;
+}
+.Grupo .C1{
+    margin-left: 30px;
+}
+.Grupo .C2{
+    margin-left: 50px;
+}
+.Grupo .C3 {
+    position: absolute;
+    right: 50px; 
+}
+.C4 p{
+    font-size: 3vw;
+    padding: 20px;
+    margin-left: 30px;
+}
+.boton {
+    padding: 10px 20px;
+    font-size: 1.2vw;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.boton a{
+    text-decoration: none;
+    color: inherit;
+}
+.boton:hover {
+    background-color: #fbff09;
+}
+.objetos {
+    margin: 0 50px 30px 50px;
+}
+.objetos table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.objetos th, .objetos td {
+    padding: 12px 15px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+.objetos th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+.objetos tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.objetos tr:hover {
+    background-color: #f1f1f1;
+}
+.objetos img {
+    width: 50px;
+    height: auto;
+    border-radius: 5px;
+}
+.objetos .modificar-btn {
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.titulo{
+    padding: 20px;
+}
+
+/*------------------------------------------------------------- Estudiantes ---------------------------------------------------------------*/
+.formulario {
+    margin: 40px 100px 0 100px;
+    padding: 20px;
+    background-color: hsl(0, 0%, 89%);
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.formulario h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2vw;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.formulario label {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: block;
+    margin-bottom: 10px;
+}
+.formulario select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.Alumno {
+    margin: 20px 100px 30px 100px;
+    background-color: hsl(0, 0%, 89%);
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+    padding: px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.Alumno img {
+    margin-left: 50px;
+    width: 15%;
+    border-radius: 50%;
+    border: 1px solid #000000;
+}
+.Alumno .titulo {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.Alumno .DatosA{
+    margin-bottom: 20px;
+    font-size: 2vw;
+    display: flex;
+    align-items: center;
+}
+.Alumno .AlumnoA{
+    margin-left: 50px;
+}
+.Alumno .AlumnoA p{
+    padding: 15px;
+}
+.observaciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 30px;
+}
+.observaciones1, .observaciones2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.observaciones .grupo {
+    margin: 0 20px;
+    width: calc(50% - 40px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+.observaciones .grupo p {
+    font-size: 1.5vw;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.observaciones textarea {
+    width: 100%;
+    padding: 50px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.botones{
+text-align: center;
+margin-bottom: 50px;
+}
+.botones button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+.botones button:hover {
+    background-color:  #fbff09;
+}
+
+/*------------------------------------------------------------- Estudiantes ---------------------------------------------------------------*/
+.boleta-container {
+    margin: 20px auto;
+    width: 80%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+.boleta-container table {
+    width: 100%;
+    max-width: 900px;
+    margin-left: 6.5%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.boleta-container th, .boleta-container td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: center;
+}
+.boleta-container th {
+    background-color: #f2f2f2;
+}
+.boleta-container th:first-child,
+.boleta-container td:first-child {
+    text-align: left;
+}
+.boleta-container table:nth-of-type(1) {
+    margin-bottom: 10px;
+}
+.boleta-container table:nth-of-type(1) p {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.boleta-container table:nth-of-type(2) th {
+    background-color: #ddd;
+}
+.boleta-container table:nth-of-type(3) {
+    margin-top: 20px;
+}
+.boleta-container table:nth-of-type(3) th {
+    background-color: #ddd;
+}
+.boleta-container table:nth-of-type(3) th, 
+.boleta-container table:nth-of-type(3) td {
+    text-align: center;
+}
+.boleta-container p{
+    font-size: 2vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+    text-transform: uppercase;
+}
+.cedula {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.Consultar {
+    margin-bottom: 10px;
+}
+.Consultar img {
+    width: 50px;
+}
+.cedula button {
+    background-color: hwb(133 27% 35%);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+.cedula button:hover {
+    background-color:  #fbff09;
+}

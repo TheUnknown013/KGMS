@@ -1,0 +1,248 @@
+/* ------------------------------------------------------------------Estilos Index ------------------------------------------------------------------------------*/
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+.encabezado{
+    background-image: url("../imagenes/Patrones.jpg");
+    border: 1px solid black;
+    max-width: 100%;
+    overflow: hidden;
+}
+.encabezado h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6vw;
+    -webkit-text-stroke: 3px #000000;
+    color: #ffffff;
+    padding: 4%;
+    align-items: center;
+}
+.encabezado img{
+    width: 13%;
+    margin: 12px 12px auto;
+    float: left;
+    display: block;
+}
+.encabezado nav{
+    max-width: 100%;
+    background-color: hwb(133 27% 35%);
+    overflow: hidden;   
+}
+.encabezado a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding: 2% 3%;
+    float: left;
+}
+.encabezado a:hover{
+    background-color: #fbff09;
+    color: #000000
+}
+.banner{
+    max-width: 100%;
+}
+.banner img{
+    width: 100%;
+    padding: 6% 20%;
+    float: inline-start;
+    margin: -25px auto;
+    display: block;
+}
+.fila{
+    max-width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.columna{
+    margin: auto;
+    width: 25%;
+    padding: 1%;
+    float: left;
+}
+.galeria{
+    max-width: 100%;
+    padding: 5%;
+    background-color: hwb(133 27% 35%);
+}
+.galeria img{
+    width: 100%;
+    height: auto;
+}
+.galeria:hover{
+    background-color: #fbff09;
+}
+.descripcion p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    color: #ffffff;
+    text-align: left;
+}
+.fooder table{
+    width: 100%;
+    height: 160px;
+    background-color: hwb(133 27% 35%);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1vw;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    float: left;
+}
+
+/* -------------------------------------------------------------Inscripciones------------------------------------------------------------------------------ */
+#contenedor {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.columna1 {
+    width: 25%;
+}
+.columna1 img{
+    width: 100%;
+    float: left;
+    margin: 20% 7%;
+    float: inline-start;
+}
+.columna1 .inscrip {
+    margin-top: 30vw;
+    margin-left: -18vw;
+    border: 0;
+    line-height: 3vw;
+    padding: 0vw 1.5vw;
+    font-size: 1.2vw;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0.1vw 0.1vw 0.1vw #000;
+    border-radius: 10px;
+    background-color: rgb(220 0 0 / 100%);
+    background-image: linear-gradient(
+    to top left,
+        rgb(0 0 0 / 20%),
+        rgb(0 0 0 / 20%) 30%,
+        rgb(0 0 0 / 0%));
+    box-shadow:
+    inset 2px 2px 3px rgb(255 255 255 / 60%),
+    inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+.columna1 .inscrip:hover {
+    background-color: rgb(255 0 0 / 100%);
+}
+.columna1 .inscrip:active {
+    box-shadow:
+    inset -2px -2px 3px rgb(255 255 255 / 60%),
+    inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+.columna2 {
+    width: 75%;
+    font-size: 1vw;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1%;
+}
+
+/* ---------------------------------------------------------------------------------Acerca de...--------------------------------------------------------------------------------- */
+.Principal p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #000000;
+    margin: 20px;
+    font-size: 4vw;
+    text-align: center;
+}
+.Principal img{
+    width: 40%;
+    padding: 0% -10%;
+    margin: 20px auto;
+    display: block;
+}
+.fila1{
+    max-width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.columna3{
+    margin: auto;
+    width: 33.3%;
+    padding: 1%;
+    float: left;
+}
+.galeria1{
+    max-width: 100%;
+    padding: 2%;
+    background-color: hwb(133 27% 35%);
+}
+.galeria1 img{
+    width: 100%;
+    height: auto;
+}
+.descripcion1 p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+    color: #ffffff;
+    text-align: left;
+    margin: 3px;
+}
+
+/* -----------------------------------------------------------------Form - Sesion-------------------------------------------------------------------------- */
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box
+}
+.encabezado_sesion{
+    background-image: url("../imagenes/Patrones.jpg");
+    border: 1px solid black;
+    max-width: 100%;
+    overflow: hidden;
+}
+.encabezado_sesion h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 6vw;
+    -webkit-text-stroke: 3px #000000;
+    color: hsl(0, 0%, 100%);
+    padding: 4%;
+    align-items: center;
+}
+.encabezado_sesion img{
+    width: 13%;
+    margin: 12px 12px auto;
+    float: left;
+    display: block;
+}
+.form{
+    max-width: 25%;
+    height: auto;
+    margin: 0px auto;
+    margin-bottom: 60px;
+    background-color: hwb(133 27% 35% / 0.411);
+    padding: 30px;
+    border-radius: 8px;
+}
+.form input{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.3vw;
+    text-align: left;
+    padding: 2%;
+    border: 1% solid;
+    border-style: outset;
+    border-radius: 2px;
+}
+.form input[type="submit"]{
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+    padding: 2.5%;
+    background-color: #ffb109;
+    border-radius: 4px;
+    cursor: pointer;
+    text-align: center;
+}
+.texto{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5vw;
+    padding: 4%;
+    text-align: center;
+}

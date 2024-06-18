@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <link rel="stylesheet" href="../plantillas/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/estilos_directora.css">
+    <script src="https://kit.fontawesome.com/dbcc51922a.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="encabezado">
+        <img src="../imagenes/Logo Pagina.png" alt="Logo GMS">
+        <h1>Jardin de Niños "Nahui Oll&iacute;n"</h1>
+        <h2> G   M   S - Directora </h2>
+        <nav>
+            <a href="../HTML_PERFILES/DIRECTORA/directora.html">
+                <i class="fa-solid fa-house"></i> Perfil</a>
+            <a href="../HTML_PERFILES/DIRECTORA/alumnos.html">
+                <i class="fa-solid fa-graduation-cap"></i> Alumnos</a>
+            <a href="../HTML_PERFILES/DIRECTORA/grupos.html">
+                <i class="fa-solid fa-children"></i> Grupos</a>
+            <a href="../HTML_PERFILES/DIRECTORA/padres.html">
+                <i class="fa-solid fa-person-breastfeeding"></i> Padres/Tutores</a>
+            <a href="../HTML_PERFILES/DIRECTORA/empleados.html">
+                <i class="fa-solid fa-chalkboard-user"></i> Empleados</a>
+            <a href="../form-sesion.html">
+                <i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesión</a>
+        </nav>
+    </header>
+
+<br>
+<div class="formulario">
+        <form class="form-floating mb-3 needs-validation">
+        <div class="titulo">
+            <h2>Datos Generales del Profesor</h2>
+        </div>
+            <br>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="nombre" required id="validationCustom01">
+                        <label for="floatingInput">Nombre(s)</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="apellidoP" required id="validationCustom01">
+                        <label for="floatingInput">Apellido Paterno</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="apellidoM">
+                         <label for="floatingInput">Apellido Materno</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="CURP">
+                        <label for="floatingInput">CURP</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="date" class="form-control" id="floatingInput" placeholder=" " name="birth">
+                        <label for="floatingInput">Fecha de Nacimiento</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <h5 class="form-check form-check-inline">Genero:</h5>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="M">
+                            <label class="form-check-label" for="inlineRadio1">Masculino</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="F">
+                            <label class="form-check-label" for="inlineRadio2">Femenino</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+
+
+
+
+
+
+        <div class="titulo">
+            <h2>Datos Profesinales</h2>
+        </div>
+            <br>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                            <option selected value="">Nivel de Estudios</option>
+                            <option value="1">Básica</option>
+                            <option value="2">Media</option>
+                            <option value="3">Media - Superior</option>
+                            <option value="4">Superior</option>
+                            <option value="5">Licenciatura</option>
+                            <option value="6">Maestría</option>
+                            <option value="7">Doctorado</option>
+                        </select>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="file" class="form-control" id="floatingInput" placeholder=" " name="apellidoP" required id="validationCustom01">
+                        <label for="floatingInput">Cedula Profesional</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                            <option selected value="">Grupo a Asignar</option>
+                            <option value="1">1er Grado. Grupo A</option>
+                            <option value="2">2do Grado. Grupo B</option>
+                            <option value="3">3ro Grado. Grupo C</option>
+                            <option value="4">1er Grado. Grupo A</option>
+                            <option value="5">2do Grado. Grupo B</option>
+                            <option value="6">3ro Grado. Grupo C</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <br>
+
+
+
+
+
+
+
+
+
+
+        <div class="titulo">
+            <h2>Dirección y Datos del Hogar</h2>
+        </div>
+            <br>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col">
+                        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                            <option value="">Municipio</option>
+                            <option value="1">Acambay de Ruíz Castañeda</option>
+                            <option value="2">Acolman</option>
+                            <option value="3">Aculco</option>
+                            <option value="4">Almoloya de Alquisiras</option>
+                            <option value="5">Almoloya de Juárez</option>
+                            <option value="6">Almoloya del Río</option>
+                            <option value="7">Amanalco</option>
+                            <option value="8">Amatepec</option>
+                            <option value="9">Amecameca</option>
+                            <option value="10">Apaxco</option>
+                            <option value="11">Atenco</option>
+                            <option value="12">Atizapán</option>
+                            <option value="13">Atizapán de Zaragoza</option>
+                            <option value="14">Atlacomulco</option>
+                            <option value="15">Atlautla</option>
+                            <option value="16">Axapusco</option>
+                            <option value="17">Ayapango</option>
+                            <option value="18">Calimaya</option>
+                            <option value="19">Capulhuac</option>
+                            <option value="20">Chalco</option>
+                            <option value="21">Chapa de Mota</option>
+                            <option value="22">Chapultepec</option>
+                            <option value="23">Chiautla</option>
+                            <option value="24">Chicoloapan</option>
+                            <option value="25">Chiconcuac</option>
+                            <option value="26">Chimalhuacán</option>
+                            <option value="27">Coacalco de Berriozábal</option>
+                            <option value="28">Coatepec Harinas</option>
+                            <option value="29">Cocotitlán</option>
+                            <option value="30">Coyotepec</option>
+                            <option value="31">Cuautitlán</option>
+                            <option value="32">Cuautitlán Izcalli</option>
+                            <option value="33">Donato Guerra</option>
+                            <option value="34">Ecatepec de Morelos</option>
+                            <option value="35">Ecatzingo</option>
+                            <option value="36">El Oro</option>
+                            <option value="37">Huehuetoca</option>
+                            <option value="38">Hueypoxtla</option>
+                            <option value="39">Huixquilucan</option>
+                            <option value="40">Isidro Fabela</option>
+                            <option value="41">Ixtapaluca</option>
+                            <option value="42">Ixtapan de la Sal</option>
+                            <option value="43">Ixtapan del Oro</option>
+                            <option value="44">Ixtlahuaca</option>
+                            <option value="45">Jaltenco</option>
+                            <option value="46">Jilotepec</option>
+                            <option value="47">Jilotzingo</option>
+                            <option value="48">Jiquipilco</option>
+                            <option value="49">Jocotitlán</option>
+                            <option value="50">Joquicingo</option>
+                            <option value="51">Juchitepec</option>
+                            <option value="52">La Paz</option>
+                            <option value="53">Lerma</option>
+                            <option value="54">Luvianos</option>
+                            <option value="55">Malinalco</option>
+                            <option value="56">Melchor Ocampo</option>
+                            <option value="57">Metepec</option>
+                            <option value="58">Mexicaltzingo</option>
+                            <option value="59">Morelos</option>
+                            <option value="60">Naucalpan de Juárez</option>
+                            <option value="61">Nextlalpan</option>
+                            <option value="62">Nezahualcóyotl</option>
+                            <option value="63">Nicolás Romero</option>
+                            <option value="64">Nopaltepec</option>
+                            <option value="65">Ocoyoacac</option>
+                            <option value="66">Ocuilan</option>
+                            <option value="67">Otumba</option>
+                            <option value="68">Otzoloapan</option>
+                            <option value="69">Otzolotepec</option>
+                            <option value="70">Ozumba</option>
+                            <option value="71">Papalotla</option>
+                            <option value="72">Polotitlán</option>
+                            <option value="73">Rayón</option>
+                            <option value="74">San Antonio la Isla</option>
+                            <option value="75">San Felipe del Progreso</option>
+                            <option value="76">San Martín de las Pirámides</option>
+                            <option value="77">San Mateo Atenco</option>
+                            <option value="78">San Simón de Guerrero</option>
+                            <option value="79">San José del Rincón</option>
+                            <option value="80">Santo Tomás</option>
+                            <option value="81">Soyaniquilpan de Juárez</option>
+                            <option value="82">Sultepec</option>
+                            <option value="83">Tecámac</option>
+                            <option value="84">Tejupilco</option>
+                            <option value="85">Temamatla</option>
+                            <option value="86">Temascalapa</option>
+                            <option value="87">Temascalcingo</option>
+                            <option value="88">Temascaltepec</option>
+                            <option value="89">Temoaya</option>
+                            <option value="90">Tenancingo</option>
+                            <option value="91">Tenango del Aire</option>
+                            <option value="92">Tenango del Valle</option>
+                            <option value="93">Teoloyucán</option>
+                            <option value="94">Teotihuacán</option>
+                            <option value="95">Tepetlaoxtoc</option>
+                            <option value="96">Tepetlixpa</option>
+                            <option value="97">Tepotzotlán</option>
+                            <option value="98">Tequixquiac</option>
+                            <option value="99">Texcaltitlán</option>
+                            <option value="100">Texcalyacac</option>
+                            <option value="101">Texcoco</option>
+                            <option value="102">Tezoyuca</option>
+                            <option value="103">Tianguistenco</option>
+                            <option value="104">Timilpan</option>
+                            <option value="105">Tlalmanalco</option>
+                            <option value="106">Tlalnepantla de Baz</option>
+                            <option value="107">Tlatlaya</option>
+                            <option value="108">Toluca</option>
+                            <option value="109">Tonanitla</option>
+                            <option value="110">Tonatico</option>
+                            <option value="111">Tultepec</option>
+                            <option value="112">Tultitlán</option>
+                            <option value="113">Valle de Bravo</option>
+                            <option value="114">Valle de Chalco Solidaridad</option>
+                            <option value="115">Villa del Carbón</option>
+                            <option value="116">Villa Guerrero</option>
+                            <option value="117">Villa Victoria</option>
+                            <option value="118">Villa de Allende</option>
+                            <option value="119">Xalatlaco</option>
+                            <option value="120">Xonacatlán</option>
+                            <option value="121">Zacazonapan</option>
+                            <option value="122">Zacualpan</option>
+                            <option value="123">Zinacantepec</option>
+                            <option value="124">Zumpahuacán</option>
+                            <option value="125">Zumpango</option>
+                        </select>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="colonia">
+                        <label for="floatingInput">Colonia</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="calle">
+                         <label for="floatingInput">Calle</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="NE">
+                        <label for="floatingInput">Número Exterior</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="NI">
+                         <label for="floatingInput">Número Interior</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="CP">
+                         <label for="floatingInput">Código Postal</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="NE">
+                        <label for="floatingInput">Entre la Calle</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="NI">
+                         <label for="floatingInput">Y la Calle</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="CP">
+                         <label for="floatingInput">Otra Referencia</label>
+                    </div>
+                </div>
+            </div>
+<br>
+
+
+
+
+
+        <div class="titulo">
+            <h2>En Caso de Emergencia Comunicarse Con</h2>
+        </div>
+        <br>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="nombre">
+                        <label for="floatingInput">Nombre(s)</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="apellidoP">
+                        <label for="floatingInput">Apellido Paterno</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="apellidoM">
+                         <label for="floatingInput">Apellido Materno</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="apellidoM">
+                         <label for="floatingInput">Parentesco</label>
+                    </div>
+                </div>
+                 <div class="row">
+                    <div class="col">
+                        <select class="form-select form-select-lg mb-3" aria-label="Large select example">
+                            <option value="">Municipio</option>
+                            <option value="1">Acambay de Ruíz Castañeda</option>
+                            <option value="2">Acolman</option>
+                            <option value="3">Aculco</option>
+                            <option value="4">Almoloya de Alquisiras</option>
+                            <option value="5">Almoloya de Juárez</option>
+                            <option value="6">Almoloya del Río</option>
+                            <option value="7">Amanalco</option>
+                            <option value="8">Amatepec</option>
+                            <option value="9">Amecameca</option>
+                            <option value="10">Apaxco</option>
+                            <option value="11">Atenco</option>
+                            <option value="12">Atizapán</option>
+                            <option value="13">Atizapán de Zaragoza</option>
+                            <option value="14">Atlacomulco</option>
+                            <option value="15">Atlautla</option>
+                            <option value="16">Axapusco</option>
+                            <option value="17">Ayapango</option>
+                            <option value="18">Calimaya</option>
+                            <option value="19">Capulhuac</option>
+                            <option value="20">Chalco</option>
+                            <option value="21">Chapa de Mota</option>
+                            <option value="22">Chapultepec</option>
+                            <option value="23">Chiautla</option>
+                            <option value="24">Chicoloapan</option>
+                            <option value="25">Chiconcuac</option>
+                            <option value="26">Chimalhuacán</option>
+                            <option value="27">Coacalco de Berriozábal</option>
+                            <option value="28">Coatepec Harinas</option>
+                            <option value="29">Cocotitlán</option>
+                            <option value="30">Coyotepec</option>
+                            <option value="31">Cuautitlán</option>
+                            <option value="32">Cuautitlán Izcalli</option>
+                            <option value="33">Donato Guerra</option>
+                            <option value="34">Ecatepec de Morelos</option>
+                            <option value="35">Ecatzingo</option>
+                            <option value="36">El Oro</option>
+                            <option value="37">Huehuetoca</option>
+                            <option value="38">Hueypoxtla</option>
+                            <option value="39">Huixquilucan</option>
+                            <option value="40">Isidro Fabela</option>
+                            <option value="41">Ixtapaluca</option>
+                            <option value="42">Ixtapan de la Sal</option>
+                            <option value="43">Ixtapan del Oro</option>
+                            <option value="44">Ixtlahuaca</option>
+                            <option value="45">Jaltenco</option>
+                            <option value="46">Jilotepec</option>
+                            <option value="47">Jilotzingo</option>
+                            <option value="48">Jiquipilco</option>
+                            <option value="49">Jocotitlán</option>
+                            <option value="50">Joquicingo</option>
+                            <option value="51">Juchitepec</option>
+                            <option value="52">La Paz</option>
+                            <option value="53">Lerma</option>
+                            <option value="54">Luvianos</option>
+                            <option value="55">Malinalco</option>
+                            <option value="56">Melchor Ocampo</option>
+                            <option value="57">Metepec</option>
+                            <option value="58">Mexicaltzingo</option>
+                            <option value="59">Morelos</option>
+                            <option value="60">Naucalpan de Juárez</option>
+                            <option value="61">Nextlalpan</option>
+                            <option value="62">Nezahualcóyotl</option>
+                            <option value="63">Nicolás Romero</option>
+                            <option value="64">Nopaltepec</option>
+                            <option value="65">Ocoyoacac</option>
+                            <option value="66">Ocuilan</option>
+                            <option value="67">Otumba</option>
+                            <option value="68">Otzoloapan</option>
+                            <option value="69">Otzolotepec</option>
+                            <option value="70">Ozumba</option>
+                            <option value="71">Papalotla</option>
+                            <option value="72">Polotitlán</option>
+                            <option value="73">Rayón</option>
+                            <option value="74">San Antonio la Isla</option>
+                            <option value="75">San Felipe del Progreso</option>
+                            <option value="76">San Martín de las Pirámides</option>
+                            <option value="77">San Mateo Atenco</option>
+                            <option value="78">San Simón de Guerrero</option>
+                            <option value="79">San José del Rincón</option>
+                            <option value="80">Santo Tomás</option>
+                            <option value="81">Soyaniquilpan de Juárez</option>
+                            <option value="82">Sultepec</option>
+                            <option value="83">Tecámac</option>
+                            <option value="84">Tejupilco</option>
+                            <option value="85">Temamatla</option>
+                            <option value="86">Temascalapa</option>
+                            <option value="87">Temascalcingo</option>
+                            <option value="88">Temascaltepec</option>
+                            <option value="89">Temoaya</option>
+                            <option value="90">Tenancingo</option>
+                            <option value="91">Tenango del Aire</option>
+                            <option value="92">Tenango del Valle</option>
+                            <option value="93">Teoloyucán</option>
+                            <option value="94">Teotihuacán</option>
+                            <option value="95">Tepetlaoxtoc</option>
+                            <option value="96">Tepetlixpa</option>
+                            <option value="97">Tepotzotlán</option>
+                            <option value="98">Tequixquiac</option>
+                            <option value="99">Texcaltitlán</option>
+                            <option value="100">Texcalyacac</option>
+                            <option value="101">Texcoco</option>
+                            <option value="102">Tezoyuca</option>
+                            <option value="103">Tianguistenco</option>
+                            <option value="104">Timilpan</option>
+                            <option value="105">Tlalmanalco</option>
+                            <option value="106">Tlalnepantla de Baz</option>
+                            <option value="107">Tlatlaya</option>
+                            <option value="108">Toluca</option>
+                            <option value="109">Tonanitla</option>
+                            <option value="110">Tonatico</option>
+                            <option value="111">Tultepec</option>
+                            <option value="112">Tultitlán</option>
+                            <option value="113">Valle de Bravo</option>
+                            <option value="114">Valle de Chalco Solidaridad</option>
+                            <option value="115">Villa del Carbón</option>
+                            <option value="116">Villa Guerrero</option>
+                            <option value="117">Villa Victoria</option>
+                            <option value="118">Villa de Allende</option>
+                            <option value="119">Xalatlaco</option>
+                            <option value="120">Xonacatlán</option>
+                            <option value="121">Zacazonapan</option>
+                            <option value="122">Zacualpan</option>
+                            <option value="123">Zinacantepec</option>
+                            <option value="124">Zumpahuacán</option>
+                            <option value="125">Zumpango</option>
+                        </select>
+                    </div>
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="colonia">
+                        <label for="floatingInput">Colonia</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="calle">
+                         <label for="floatingInput">Calle</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="NE">
+                        <label for="floatingInput">Número Exterior</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="NI">
+                         <label for="floatingInput">Número Interior</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="CP">
+                         <label for="floatingInput">Código Postal</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <input type="text" class="form-control" id="floatingInput" placeholder=" " name="NE">
+                        <label for="floatingInput">Entre la Calle</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="NI">
+                         <label for="floatingInput">Y la Calle</label>
+                    </div>
+                    <div class="col form-floating mb-3">
+                         <input type="text" class="form-control" id="floatingInput" placeholder=" " name="CP">
+                         <label for="floatingInput">Otra Referencia</label>
+                    </div>
+                </div>
+            </div>
+<br>
+
+
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col form-floating mb-3">
+                        <button type="submit" class="btn btn-success">Agregar</button>
+                    </div>
+                </div>
+            </div>
+    </form>
+</div>
+</body>
+
+ <footer class="fooder">
+        <table>
+            <tr>
+                <td>
+                    <i class="fa-solid fa-school"></i> Jardin de Niños Nahui Ollin <br>
+                    <br>
+                    <i class="fa-solid fa-location-dot"></i> Av. Lázaro Cardenas S/N y 4ta Avenida, Col. Benito Juarez <br>
+                    <br>
+                    <i class="fa-solid fa-phone"></i> Telefono: 5536478952 <br>
+                </td>
+                <td>
+                    &#169; The Ark
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script type="text/javascript" src="plantillas/bootstrap/js/bootstrap.min.js"></script>
+</html>

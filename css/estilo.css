@@ -1,0 +1,21 @@
+.titulo{
+	background: linear-gradient(to right, #003591, #E5E5E5);
+	color:white;
+}
+
+.formulario{
+	padding: 1%
+}
+
+form{
+	padding-top: 1%;
+	border: 0.2vw solid black;
+	border-radius: 1vw;
+	background-color: #E5E5E5;
+}
+
+
+#botonadd{
+	float:RIGHT;
+	margin-right: 5% 
+}

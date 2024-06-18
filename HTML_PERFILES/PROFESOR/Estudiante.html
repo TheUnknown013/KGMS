@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabla Editable</title>
+    <link rel="stylesheet" href="../../CSS/estilos_profesor.css">
+    <script src="https://kit.fontawesome.com/faae6e3052.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="encabezado">
+        <img src="../../imagenes/Logo Pagina.png" alt="Logo GMS">
+        <h1>Jardin de Niños "Nahui Oll&iacute;n"</h1>
+        <nav>
+            <a href="calificaciones.html"> 
+                <i class="fa-solid fa-clipboard-list"></i> Calificaciones</a>
+            <a href="../../form-sesion.html">
+                <i class="fa-solid fa-right-from-bracket"></i> Cerrar Sesion</a>
+        </nav>
+    </header>
+    <!-- Contenido -->
+    <div class="formulario">
+        <h2>Área de Aprendizaje</h2>
+        <form id="areaForm">
+            <label for="area">Seleccionar Área de Aprendizaje:</label>
+            <select id="area" name="area">
+                <option value="SINSELECT" disabled selected hidden>-- Selecciona una opción --</option>
+                <option value="Area 1">Area de Aprendizaje 1</option>
+                <option value="Area 2">Area de Aprendizaje 2</option>
+                <option value="Area 3">Area de Aprendizaje 2</option>
+            </select>
+        </form>
+    </div>
+    <div class="Alumno">
+        <p class="titulo">Desempeño del Alumno</p>
+        <div class="DatosA">
+            <img src="../../imagenes2/Foto Alumno.jpg" alt="Alumno">
+            <div class="AlumnoA">
+                <p>Nombre: Contreras Gama Tadeo Habith</p>
+                <p>Grupo: IC - 32M</p>
+            </div>
+        </div>
+        <div class="observaciones">
+            <div class="observaciones1">
+                <div class="grupo">
+                    <p id="Titulo2">Agregar Observaciones:</p>
+                    <textarea id="observaciones" rows="6" cols="50" maxlength="500"></textarea>
+                </div>
+                <div class="grupo">
+                    <p id="Titulo3">Área de Mejora:</p>
+                    <textarea id="areaMejora" rows="6" cols="50" maxlength="500"></textarea>
+                </div>
+            </div>
+            <div class="observaciones2">
+                <div class="grupo">
+                    <p id="Titulo4">Comentarios del Tutor:</p>
+                    <textarea id="comentariosTutor" rows="6" cols="50" maxlength="500"></textarea>
+                </div>
+                <div class="grupo">
+                    <p id="Titulo5">Notas Adicionales:</p>
+                    <textarea id="notasAdicionales" rows="6" cols="50" maxlength="500"></textarea>
+                </div>
+            </div>
+        </div>
+        <div class="botones">
+            <button id="editarBtn">Editar</button>
+            <button id="guardarBtn">Guardar</button>
+            <a href="Acciones de Otros HTML/Boletas.html"><button id="imprimirBtn">Ver</button></a>
+        </div>    
+    </div>
+    <!--Pie de pagina-->
+    <footer class="fooder">
+        <table>
+            <tr>
+                <td>
+                    <i class="fa-solid fa-school"></i> Jardin de Niños Nahui Ollin <br>
+                    <br>
+                    <i class="fa-solid fa-location-dot"></i> Av. Lázaro Cardenas S/N y 4ta Avenida, Col. Benito Juarez <br>
+                    <br>
+                    <i class="fa-solid fa-phone"></i> Telefono: 5536478952 <br>
+                </td>
+                <td>
+                    &#169; The Ark
+                </td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>
